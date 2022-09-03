@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 abstract class AppColors {
   const AppColors._();
+
+  static PrimaryColor primaryColor = PrimaryColor();
+  static SecondaryColor secondaryColor = SecondaryColor();
+  static ThirdColor thirdColor = ThirdColor();
 }
 
 class PrimaryColor extends ColorSwatch<int> {
