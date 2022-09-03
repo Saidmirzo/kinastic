@@ -35,54 +35,57 @@ class NotificationsPage extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.white,
       ),
-      body: Column(
-        children: [
-          NotificationContainer(
-            imagePath: Assets.images.notific1,
-            title: "Hey, it’s time for lunch",
-            subTitle: "About 1 minutes ago",
-          ),
-          const Divider(
-            color: Color(0xFFE5E5E5),
-          ),
-          NotificationContainer(
-            imagePath: Assets.images.notific2,
-            title: "Don’t miss your lowerbody workout",
-            subTitle: "About 3 hours ago",
-          ),
-          const Divider(
-            color: Color(0xFFE5E5E5),
-          ),
-          NotificationContainer(
-            imagePath: Assets.images.notific3,
-            title: "Congratulations, You have finished A..",
-            subTitle: "10 Aug",
-          ),
-          const Divider(
-            color: Color(0xFFE5E5E5),
-          ),
-          NotificationContainer(
-            imagePath: Assets.images.notific4,
-            title: "Hey, let’s add some meals for your b..",
-            subTitle: "About 3 hours ago",
-          ),
-          const Divider(
-            color: Color(0xFFE5E5E5),
-          ),
-          NotificationContainer(
-            imagePath: Assets.images.notific3,
-            title: "Hey, it’s time for lunch",
-            subTitle: "28 Jul",
-          ),
-          const Divider(
-            color: Color(0xFFE5E5E5),
-          ),
-          NotificationContainer(
-            imagePath: Assets.images.notific2,
-            title: "Ups, You have missed your Lowerbo...",
-            subTitle: "27 Jul",
-          ),
-        ],
+      body: SingleChildScrollView(
+        physics: const BouncingScrollPhysics(),
+        child: Column(
+          children: [
+            NotificationContainer(
+              imagePath: Assets.images.notific1,
+              title: "Hey, it’s time for lunch",
+              subTitle: "About 1 minutes ago",
+            ),
+            const Divider(
+              color: Color(0xFFE5E5E5),
+            ),
+            NotificationContainer(
+              imagePath: Assets.images.notific2,
+              title: "Don’t miss your lowerbody workout",
+              subTitle: "About 3 hours ago",
+            ),
+            const Divider(
+              color: Color(0xFFE5E5E5),
+            ),
+            NotificationContainer(
+              imagePath: Assets.images.notific3,
+              title: "Congratulations, You have finished A..",
+              subTitle: "10 Aug",
+            ),
+            const Divider(
+              color: Color(0xFFE5E5E5),
+            ),
+            NotificationContainer(
+              imagePath: Assets.images.notific4,
+              title: "Hey, let’s add some meals for your b..",
+              subTitle: "About 3 hours ago",
+            ),
+            const Divider(
+              color: Color(0xFFE5E5E5),
+            ),
+            NotificationContainer(
+              imagePath: Assets.images.notific3,
+              title: "Hey, it’s time for lunch",
+              subTitle: "28 Jul",
+            ),
+            const Divider(
+              color: Color(0xFFE5E5E5),
+            ),
+            NotificationContainer(
+              imagePath: Assets.images.notific2,
+              title: "Ups, You have missed your Lowerbo...",
+              subTitle: "27 Jul",
+            ),
+          ],
+        ),
       ),
     );
   }
