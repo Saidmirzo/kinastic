@@ -48,6 +48,8 @@ class _Icons extends _AssetsFolder {
   String get user => "$basePath/ic_user.svg";
 
   String get enter => "$basePath/ic_enter_arrow.svg";
+
+  String get sett => "$basePath/ic_sett.svg";
 }
 
 class _Images extends _AssetsFolder {
@@ -72,4 +74,10 @@ class _Images extends _AssetsFolder {
   String get notific3 => "$basePath/img_notific_3.png";
 
   String get notific4 => "$basePath/img_notific_4.png";
+
+  String get foodBread => "$basePath/img_food_bread.svg";
+
+  String get foodPancake => "$basePath/img_food_pancake.svg";
+
+  String get sleep => "$basePath/img_sleep_moon.png";
 }
