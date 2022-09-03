@@ -50,6 +50,7 @@ class _MainPageState extends State<MainPage> {
         selectedItemColor: AppColors.thirdColor.shade100,
         unselectedItemColor: AppColors.primaryColor.shade100,
         showUnselectedLabels: true,
+        elevation: 0,
         items: List.generate(5, (index) {
           return BottomNavigationBarItem(
             icon: SvgPicture.asset(

@@ -38,6 +38,14 @@ abstract class AppTextStyles {
     color: Colors.white,
   );
 
+  static TextStyle h6 = const TextStyle(
+    fontFamily: fontFamily,
+    fontWeight: FontWeight.bold,
+    fontStyle: FontStyle.normal,
+    fontSize: 16,
+    color: Color(0xFF1D1617),
+  );
+
   static TextStyle regular1 = const TextStyle(
     fontFamily: fontFamily,
     fontWeight: FontWeight.normal,

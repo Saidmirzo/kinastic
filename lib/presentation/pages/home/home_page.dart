@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:kinastic/config/constants/app_decorations.dart';
 import 'package:kinastic/config/constants/app_text_styles.dart';
 import 'package:kinastic/config/constants/assets.dart';
+import 'package:kinastic/presentation/pages/notifications/notifications_page.dart';
 
 import 'components/activities_container.dart';
 import 'components/plan_container.dart';
@@ -15,7 +16,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-        margin: const EdgeInsets.all(25),
+        margin: const EdgeInsets.all(20),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,6 +36,7 @@ class HomePage extends StatelessWidget {
                           "Welcome Back Arash",
                           style: AppTextStyles.h1,
                         ),
+                        const SizedBox(height: 3),
                         Text(
                           "how are you feeling today?",
                           style: AppTextStyles.h2,
@@ -43,13 +45,20 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   const Spacer(),
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    width: 40,
-                    height: 40,
-                    decoration: AppDecorations.defDecor,
-                    child: SvgPicture.asset(
-                      Assets.icons.notification,
+                  GestureDetector(
+                    onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: ((context) => const NotificationsPage()),
+                        )),
+                    child: Container(
+                      padding: const EdgeInsets.all(8),
+                      width: 40,
+                      height: 40,
+                      decoration: AppDecorations.defDecor,
+                      child: SvgPicture.asset(
+                        Assets.icons.notification,
+                      ),
                     ),
                   )
                 ],
