@@ -32,6 +32,22 @@ class _Icons extends _AssetsFolder {
   String get notification => "$basePath/ic_notification.svg";
 
   String get backArrow => "$basePath/ic_back_arrow.svg";
+
+  String get achievement => "$basePath/ic_achievement.svg";
+
+  String get activity => "$basePath/ic_activity.svg";
+
+  String get contact => "$basePath/ic_contact.svg";
+
+  String get notif => "$basePath/ic_notif.svg";
+
+  String get privacy => "$basePath/ic_privacy.svg";
+
+  String get settings => "$basePath/ic_settings.svg";
+
+  String get user => "$basePath/ic_user.svg";
+
+  String get enter => "$basePath/ic_enter_arrow.svg";
 }
 
 class _Images extends _AssetsFolder {
